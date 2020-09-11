@@ -58,4 +58,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+client.login(config.BOT_TOKEN);//BOT_TOKEN is the Client Secret
