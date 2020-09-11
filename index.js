@@ -7,7 +7,7 @@ const config = require('./config.json');
 const client = new Discord.Client();
 
 // Paste channel ID in here to change where the bot's messages are sent to
-const idChannel = "753769873439719559";
+const idChannel = "193849198708260873";
 
 // Text when the bot is turned online sent out to the server
 let messageText = "```fix\n--Hello World--\n\nT.I. Bot Status: Online```";
@@ -58,4 +58,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login('NzUzNzY3MzYwODkyMjQwMDU1.X1q-jw.feWw7-pfzvWsrCPQgyqYUieRrDI');
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
